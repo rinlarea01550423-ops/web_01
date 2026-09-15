@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>표 만들기</h1>
-    <table>
+    <table border="1">
         <thead>
             <tr>
                 <th>제목1</th>
@@ -17,19 +17,21 @@
         </thead>
         <tbody>
             <tr>
-                <td>내용11</td>
+                <td rowspan="2">내용11</td>
                 <td>내용12</td>
                 <td>내용13</td>
             </tr>
             <tr>
-                <td>내용21</td>
-                <td>내용22</td>
+                <!--<td>내용21</td>-->
+                <td>내용22내용22</td>
                 <td>내용23</td>
             </tr>
             <tr>
-                <td>내용31</td>
+                <td colspan="3">내용31</td>
+                <!--
                 <td>내용32</td>
                 <td>내용33</td>
+                -->
             </tr>
         </tbody>
         <tfoot>
