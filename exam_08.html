@@ -6,7 +6,14 @@
     <title>Document</title>
 </head>
 <style>
-    *{ color: blue; } /* 전체 선택자 */
+    /* 링크 가상 클래스 */
+    a:link { color: black; text-decoration:  none;}
+    a:visited { color: black;}
+    a:hover { color: cyan;}
+    a:active { background-color: darkgray;}
+</style>
+<style>
+    /* *{ color: blue; } */ /* 전체 선택자 */
     p { background-color: yellow;} /* 태그 선택자 */
     .c1 { border: 1px solid red;} /* 클래스 선택자 */
     #n1 { background-color: aqua;} /* id 선택자 */
@@ -28,5 +35,6 @@
         <li>CSS</li>
         <li>JS</li>
     </ol>
+    <a href="https://www.syu.ac.kr/">삼육대학교</a>
 </body>
 </html>
