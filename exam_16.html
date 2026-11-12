@@ -30,18 +30,21 @@
             else{
                 $('#disp1').val(cur);
                 //$('#disp2').val(eval(cur)); //evaluate : 명령 실행, 계산 실행해줌, 근데 위험요소가 있어서 잘 사용 x
-                // if(opt=="+"){
-                //     $('disp2').val(cur+opt);
-                // }
-                // else if(opt=="-"){
-                //     $('disp2').val(cur-opt);
-                // }
-                // else if(opt=="*"){
-                //     $('disp2').val(cur*opt);
-                // }
-                // else if (opt=="/"){
-                //     $('disp2').val(cur/opt);
-                // }
+                let result=0;
+                if(opt=="+"){
+                    result=Number(cur)+Number(opt);
+                }
+                else if(opt=="-"){
+                    result=Number(cur)-Number(opt);
+                }
+                else if(opt=="*"){
+                    result=Number(cur)*Number(opt);
+                }
+                else if (opt=="/"){
+                    result=Number(cur)/Number(opt);
+                }
+                $('#disp1').val(num1+" "+op+" "+num2+" =");
+                $('#disp2').val(result);
             }
         });
     });
