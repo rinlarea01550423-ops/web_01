@@ -17,11 +17,11 @@ const server=http.createServer((req, res)=>{
     // const readStream=fs.createReadStream(__dirname+"/index.html", "utf8");
     // readStream.pipe(res);
     const {method, url}=req;
-    if(method==="GET"&&rul==="/home"){
+    if(method==="POST"&&url==="/home"){
         res.statusCode=200;
         res.end("HOME");
     }
-    else if (method==="GET"&&rul==="/about"){
+    else if (method==="GET"&&url==="/about"){
         res.statusCode=200;
         res.end("ABOUT");
     }
