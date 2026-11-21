@@ -16,6 +16,7 @@ const server=http.createServer((req, res)=>{
     // res.setHeader("Content-Type", "text/html");
     // const readStream=fs.createReadStream(__dirname+"/index.html", "utf8");
     // readStream.pipe(res);
+    res.setHeader("Content-Type", "text/html");
     const {method, url}=req;
     if(method==="POST"&&url==="/home"){
         res.statusCode=200;
